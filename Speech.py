@@ -1,5 +1,6 @@
 import speech_recognition as sr
 from Color import bcolors
+
 r = sr.Recognizer()
 with sr.Microphone() as source:
     print("Speak anything: ")
