@@ -1,5 +1,5 @@
 import speech_recognition as sr
-
+from Color import bcolors
 r = sr.Recognizer()
 with sr.Microphone() as source:
     print("Speak anything: ")
@@ -7,6 +7,6 @@ with sr.Microphone() as source:
 
     try:
         text = r.recognize_google(audio)
-        print('You said: {}'.format(text))
+        print(bcolors.OKBLUE + bcolors.BOLD + 'You said: {}'.format(text) + bcolors.ENDC)
     except:
-        print("Sorry could not recognize your voice")
+        print("Sorry could not recognize your input voice")
