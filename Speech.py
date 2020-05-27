@@ -3,7 +3,7 @@ from Color import bcolors
 
 r = sr.Recognizer()
 with sr.Microphone() as source:
-    print("Speak anything: ")
+    print(bcolors.OKBLUE + "Speak anything: " + bcolors.ENDC)
     audio = r.listen(source)
 
     try:
