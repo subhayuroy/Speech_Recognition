@@ -12,10 +12,8 @@ with sr.Microphone() as source:
     except:
         print("Sorry could not recognize your input voice. Please retry")
         
-        
-        
-##Another method
-
+               
+#Another method
 import speech_recognition as sr 
 import pyttsx3  
 
